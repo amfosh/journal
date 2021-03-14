@@ -11,18 +11,19 @@
  * It is generally better to create a new file per style scope.
  *
  */
- 
- body {
-    text-align: center;
-    font-family: 'Archivo Narrow';
-    font-weight: 300;
-    line-height: 1.6em;
-    font-size: 1.3em;
-    max-width: 500px;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+//  body {
+//     text-align: center;
+//     font-family: 'Archivo Narrow';
+//     font-weight: 300;
+//     line-height: 1.6em;
+//     font-size: 1.3em;
+//     max-width: 500px;
+//     margin: 0 auto;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     -ms-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+// }
