@@ -58,15 +58,15 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (10.2.4.0)
-      execjs
+    autoprefixer-rails (10.2.5.1)
+      execjs (> 0)
     bcrypt (3.1.15)
     bindex (0.8.1)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
-    bootstrap-sass (3.4.1)
+    bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
-      sassc (>= 2.0.0)
+      sass (>= 3.3.4)
     bootstrap_form (4.5.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -168,6 +168,11 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rubyzip (2.3.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -200,6 +205,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (4.1.0)
@@ -227,7 +234,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
-  bootstrap-sass
+  bootstrap-sass (~> 3.3.6)
   bootstrap_form
   byebug
   capybara (>= 2.15)
@@ -244,6 +251,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
   tzinfo-data
+  uglifier
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
