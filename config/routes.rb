@@ -7,6 +7,15 @@ Rails.application.routes.draw do
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
     get 'signup', to: 'devise/registrations#new'
+
+  resources :entries do
+    collection do
+      get 'small_space_gardening'
+      get 'vegetable'
+      get 'pests'
+      get 'flowers'
+      end
+    end
   end
 end
 
