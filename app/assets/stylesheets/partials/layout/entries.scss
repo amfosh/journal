@@ -1,12 +1,16 @@
- .single-post-card{
-  min-height: 135px;
-  max-height: 135px;
+ .single-entry-card{
+  min-height: 100%;
+  max-height: 275px;
   box-shadow: 1px 1px 4px rgba(0,0,0, 0.3);
   color: black;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   transition: border 0.1s, background 0.5s;
-  .post-text {
+
+  .card-img-top {
+    width: 100%;
+  }
+  .card-title {
     overflow: hidden;
   }
   a, a:active, a:hover {
@@ -20,24 +24,24 @@
   }
 }
 
-.post-content {
-  display: none;
-}
+// .entry-content {
+//   display: none;
+// }
 
-.solid-color-mode, .border-color-mode {
-  .post-text {
-    text-align: center;
-  }
-}
+// .solid-color-mode, .border-color-mode {
+//   .entry-text {
+//     text-align: center;
+//   }
+// }
 
-.solid-color-mode {
-  .post-text {
-    padding: 10px;
-    background-color: white;
-    border-radius: 25px;
-  }
-}
+// .solid-color-mode {
+//   .entry-text {
+//     padding: 10px;
+//     background-color: white;
+//     border-radius: 25px;
+//   }
+// }
 
-.border-color-mode {
-  background-color: white;
-}
+// .border-color-mode {
+//   background-color: white;
+// }

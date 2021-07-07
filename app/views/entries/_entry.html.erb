@@ -1,9 +1,9 @@
-<div class="card" style="width: 18rem;" id=<%= entry_path(entry.id)%>
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <div class="posted-by">Posted by <%= entry.user.username %></div>
+<div class="col-sm-3 single-entry-card" style="width: 18rem;" id=<%= entry_path(entry.id)%>>
+  <img src="https://www.verywellfamily.com/thmb/4LOpOLFNGYDMhyNfpsQHzUZxhgw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hispanic-father-and-daughter-gardening-together-463247401-58a390123df78c475830f5f5.jpg" class="card-img-top" alt="...">
+  <div class="card-block">
     <h5 class="card-title"><%= truncate(entry.title, :length => 60) %></h5>
-    <p class="card-text"><%= truncate(entry.content, :length => 60) %></p>
+    <div class="posted-by">Posted by <%= entry.user.username %></div>
+    <p class="entry-content"><%= truncate(entry.content, :length => 60) %></p>
     <a href="#" class="btn btn-primary">Go Somewhere</a>
   </div>
 </div>
