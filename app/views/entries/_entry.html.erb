@@ -1,4 +1,4 @@
-<div class="col-sm-3 single-entry-card" style="width: 18rem;" id=<%= entry_path(entry.id)%>>
+<div class="single-entry-card" class="col-sm-9" id=<%= entry_path(entry.id)%>>
   <img src="https://www.verywellfamily.com/thmb/4LOpOLFNGYDMhyNfpsQHzUZxhgw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hispanic-father-and-daughter-gardening-together-463247401-58a390123df78c475830f5f5.jpg" class="card-img-top" alt="...">
   <div class="card-block">
     <h5 class="card-title"><%= truncate(entry.title, :length => 60) %></h5>
@@ -7,4 +7,3 @@
     <a href="#" class="btn btn-primary">Go Somewhere</a>
   </div>
 </div>
-

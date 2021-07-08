@@ -1,12 +1,7 @@
 <div class="container">
-  <div class="row">
-    <div id="side-menu"  class="col-sm-3">
-    <%= Category.distinct.pluck(:name) %>
-    </div><!-- side-menu -->
+    <div id="main-content">
+        
+            <%= render @entries %>
 
-    <div id="main-content" class="col-sm-9">
-        <%= render @entries %>
-    </div><!-- main-content -->
-
-  </div><!-- row -->
-</div><!-- container -->
+    </div>
+</div>

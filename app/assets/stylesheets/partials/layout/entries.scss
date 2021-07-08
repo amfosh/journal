@@ -1,9 +1,10 @@
- .single-entry-card{
-  min-height: 100%;
-  max-height: 275px;
+
+.single-entry-card{
+  
   box-shadow: 1px 1px 4px rgba(0,0,0, 0.3);
   color: black;
   padding: 10px;
+  margin-top: 20px;
   text-align: center;
   transition: border 0.1s, background 0.5s;
 
@@ -13,9 +14,11 @@
   .card-title {
     overflow: hidden;
   }
+
   a, a:active, a:hover {
     color: black;
   }
+  
   &:hover {
     cursor: pointer;
     background: white;
@@ -23,25 +26,3 @@
     border-radius: 1%;
   }
 }
-
-// .entry-content {
-//   display: none;
-// }
-
-// .solid-color-mode, .border-color-mode {
-//   .entry-text {
-//     text-align: center;
-//   }
-// }
-
-// .solid-color-mode {
-//   .entry-text {
-//     padding: 10px;
-//     background-color: white;
-//     border-radius: 25px;
-//   }
-// }
-
-// .border-color-mode {
-//   background-color: white;
-// }
