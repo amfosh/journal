@@ -19,27 +19,10 @@ def seed_users
   end
   
   
-  def seed_categories
-    small_space_gardening = ['Balcony Gardening', 'Container Gardening', 'Tiny Garden', 'Pocket Garden']
-    vegetable = ['Vegetable', 'Tomato', 'Green Beans', 'Veggie']
-    flowers = ['Flowers']
-    pests = ['Pests', 'Aphids']
-  
-    small_space_gardening.each do |name|
-      Category.create(branch: 'small space gardening', name: name)
-    end
-  
-    vegetable.each do |name|
-      Category.create(branch: 'vegetable', name: name)
-    end
-  
-    flowers.each do |name|
-      Category.create(branch: 'flowers', name: name)
-    end
-
-    pests.each do |name|
-        Category.create(branch: 'pests', name: name)
-      end
+  def seed_categories 
+    Category.create(name:'Balcony Gardening')
+    Category.create(name:'Tiny Garden')
+    Category.create(name:'Pocket Garden')    
   end
   
   def seed_entries
