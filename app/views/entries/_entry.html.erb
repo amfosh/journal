@@ -1,9 +1,17 @@
-<div class="single-entry-card" class="col-sm-9" id=<%= entry_path(entry.id)%>>
-  <img src="https://www.verywellfamily.com/thmb/4LOpOLFNGYDMhyNfpsQHzUZxhgw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hispanic-father-and-daughter-gardening-together-463247401-58a390123df78c475830f5f5.jpg" class="card-img-top" alt="...">
-  <div class="card-block">
-    <h5 class="card-title"><%= truncate(entry.title, :length => 60) %></h5>
-    <div class="posted-by">Posted by <%= entry.user.username %></div>
-    <p class="entry-content"><%= truncate(entry.content, :length => 60) %></p>
-    <a href="#" class="btn btn-primary">Go Somewhere</a>
-  </div>
+<div class="album">
+   <div class="container">
+      <div class="row">
+         <% @entries.each do |entry| %>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-centere">
+         <div class="card">
+            <img src="https://images.placeholders.dev/?width=300&height=200">
+            <div class="card-block">
+              <h1 class="card-text"><%= entry.title %></h1>
+              <p class="card-text"><%= entry.content %></p>
+            </div>
+         </div>
+         </div>
+         <% end %>
+      </div>
+   </div>
 </div>
