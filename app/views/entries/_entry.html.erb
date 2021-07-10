@@ -2,13 +2,13 @@
    <div class="container">
       <div class="row">
          <% @entries.each do |entry| %>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-centered">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-centered" id=<%= entry_path(entry.id) %>>
          <div class="card">
             <img src="https://images.placeholders.dev/?width=300&height=200">
             <div class="card-block">
               <h1 class="card-text"><%= entry.title %></h1>
               <p class="card-text"><%= entry.content %></p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <%= link_to "Read More", entry_path(post.id), class: 'interested' %>
             </div>
          </div>
          </div>
