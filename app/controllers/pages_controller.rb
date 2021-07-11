@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
     def index
-        @entries = Entry.limit(5)
+        @entries = Entry.all.uniq
     end
 end
